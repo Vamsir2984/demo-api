@@ -1,0 +1,295 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-03T06:39:31.287Z",
+        "line": 9,
+        "name": "validate delete product api status code works correctly",
+        "description": "",
+        "id": "delete-product-using-delete-api;validate-delete-product-api-status-code-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 254280797,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I hit the url of delete product api endpoint",
+            "match": {
+              "location": "stepdefs.Products.iHitTheUrlOfDeleteProductApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1725226197,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I pass the url of delete products in the request with 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefs.Products.iPassTheUrlOfDeleteProductsInTheRequestWith(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1226365,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I receive the response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.Products.i_receive_the_response_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "delete product using DELETE API",
+    "description": "",
+    "id": "delete-product-using-delete-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/DeleteProducts.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-03T06:39:33.290Z",
+        "line": 10,
+        "name": "validate post product api status code works correctly",
+        "description": "",
+        "id": "insert-products-using-post-api;validate-post-product-api-status-code-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 583075,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I hit the url of post product api endpoint",
+            "match": {
+              "location": "stepdefs.Products.iHitTheUrlOfPostProductApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 791767549,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I pass the url of products in the request",
+            "match": {
+              "location": "stepdefs.Products.i_pass_the_url_of_products_in_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 917470654,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass the request body of product title Shoes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shoes",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefs.Products.iPassTheRequestBodyOfProductTitle(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230333,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive the response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.Products.i_receive_the_response_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-03T06:39:35.008Z",
+        "line": 19,
+        "name": "validate post product api response body works correctly",
+        "description": "",
+        "id": "insert-products-using-post-api;validate-post-product-api-response-body-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 393566,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I hit the url of post product api endpoint",
+            "match": {
+              "location": "stepdefs.Products.iHitTheUrlOfPostProductApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 919348890,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I pass the url of products in the request",
+            "match": {
+              "location": "stepdefs.Products.i_pass_the_url_of_products_in_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 526842564,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I pass the request body of product title Shoes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shoes",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefs.Products.iPassTheRequestBodyOfProductTitle(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 307260,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I receive the response body with id as 21",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefs.Products.iReceiveTheResponseBodyWithIdAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "insert products using POST API",
+    "description": "",
+    "id": "insert-products-using-post-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PostProducts.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-03T06:39:36.462Z",
+        "line": 9,
+        "name": "validate put product api status code works correctly",
+        "description": "",
+        "id": "update-products-using-put-api;validate-put-product-api-status-code-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 159341,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I hit the url of put product api endpoint",
+            "match": {
+              "location": "stepdefs.Products.iHitTheUrlOfPutProductApiEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 901046641,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I pass the url of products in the request with 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefs.Products.iPassTheUrlOfProductsInTheRequestWith(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111723,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I receive the response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.Products.i_receive_the_response_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "update products using PUT API",
+    "description": "",
+    "id": "update-products-using-put-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PutProducts.feature",
+    "tags": []
+  }
+]
